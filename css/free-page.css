@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+:root {
+  --pink: #BB7295;
+  --black: #000000;
+  --gray: #f4f3f5;
+  --white: #FFFFFF;
+  --brown: #483c42;
+}
+
+.free-patterns-info ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+.free-patterns-info img{
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+    cursor: pointer;
+}
+.free-patterns-info img:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(184, 6, 80, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(183, 130, 173, 0.5));
+}

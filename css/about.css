@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --pink: #BB7295;
+  --black: #000000;
+  --gray: #f4f3f5;
+  --white: #FFFFFF;
+  --brown: #483c42;
+}
+.about-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.about-img {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about-img img{
+  border-radius: 3px;
+  width: 260px;
+}
+.about-img p{
+  color: var(--pink);
+  font-weight: bold;
+}
+.about-info {
+  width: 31rem;
+  font-size: 15px;
+}
