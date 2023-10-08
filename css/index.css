@@ -57,6 +57,14 @@ header .social-links {
   gap: 1rem;
 }
 
+.mbl-menu {
+  display: none;
+}
+
+.topnav {
+  display: none;
+}
+
 /* MAIN ~~~*/
 
 /* SECTION CATEGORY */
@@ -79,10 +87,26 @@ section ul {
   gap: 2rem;
 }
 
+.category ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.lista1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.lista2 {
+  display: flex;
+  gap: 1rem
+}
+
 .category li a{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .category a{
   color: var(--pink);
@@ -121,8 +145,13 @@ main .divisor {
 
   padding-top: 4rem;
 }
+
+.lovers span {
+  color: var(--pink);
+}
 .lovers h1{
   letter-spacing: 2px;
+  font-weight: 300;
 }
 .lovers p {
 font-family: 'Roboto Mono', monospace;
@@ -204,4 +233,75 @@ footer span{
 }
 footer a{
   color: var(--pink);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .mbl-menu {
+    display: flex;
+    align-items: center;
+  }
+  .hamburguer {
+    align-self: flex-start;
+    margin: 0.5rem;
+  }
+
+  .topnav #myLinks {
+  display: none;
+}
+
+  .topnav {
+  overflow: hidden;
+  position: relative;
+  }
+.topnav a {
+  color: rgb(41, 40, 40);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(154, 191, 242);
+}
+
+main h1{
+    font-size: 15px;
+    margin-top: -6rem;
+  }
+
+.category img {
+  width: 78%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lista1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.divisor {
+  margin-bottom: 3rem;
+}
+.general-links {
+  display: none;
+}
+
+footer {
+  margin-top: -4rem;
+}
+
 }

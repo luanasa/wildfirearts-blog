@@ -3,7 +3,6 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Mono', monospace;
 }
 :root {
@@ -30,3 +29,15 @@
   -webkit-filter: drop-shadow(15px 10px 5px rgba(184, 6, 80, 0.5));
     filter: drop-shadow(15px 10px 5px rgba(183, 130, 173, 0.5));
 }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .free-patterns-info ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+ }
+
